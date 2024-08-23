@@ -1,0 +1,2 @@
+Setting up MQTT to AWS
+ssh -i "MQTT_2024_01.pem" ec2-user@ec2-3-107-83-64.ap-southeast-2.compute.amazonaws.com
