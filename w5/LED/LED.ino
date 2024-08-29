@@ -11,6 +11,7 @@ void setup() {
 void loop() {
   // Process commands from bluetooth first.
   if(Serial1.available() > 0){
+    Serial.println("hello");
     String str = Serial1.readString().substring(0);
     Serial.println(str);
     if(str == "LED_ON"){
