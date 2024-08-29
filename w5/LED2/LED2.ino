@@ -10,17 +10,14 @@ void setup() {
 
 void loop() {
   // Process commands from bluetooth first.
-  int integer = 3;
   if(Serial1.available() > 0){
-    String str = Serial1.readString();
-    integer = atoi(str.c_str());
-    //Serial.println(interger);
-    //Serial.println("hello");
+    Serial.println("hello");
+    String str = Serial1.readString().substring(0);
     Serial.println(str);
-    if(integer == 1){
+    if(str == "LED_ON"){
       digitalWrite(LEDPIN, HIGH);
       Serial.println("LED ON");
-    }else if(integer == 0){
+    }else if(str == "LED_OFF"){
         digitalWrite(LEDPIN, LOW);
         Serial.println("LED OFF");
       }
