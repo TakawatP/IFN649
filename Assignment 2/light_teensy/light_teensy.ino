@@ -26,14 +26,14 @@ void loop() {
   if (sensorValue > 150) {
     digitalWrite(LED_BUILTIN, HIGH);
     digitalWrite(LEDPIN, HIGH);
-    Serial.print("HIGH\n");
-    Serial1.print("HIGH\n");
+    Serial.print("LOW\n");
+    Serial1.print("LOW\n");
   }
   else {
     digitalWrite(LED_BUILTIN, LOW);
     digitalWrite(LEDPIN, LOW);
-    Serial.print("LOW\n");
-    Serial1.print("LOW\n");
+    Serial.print("HIGH\n");
+    Serial1.print("HIGH\n");
   }
   delay(1000);
 }
