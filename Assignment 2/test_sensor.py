@@ -39,7 +39,7 @@ while True:
         ldr_value = cookedserial
 
         # If it's dark, send "Light ON" message
-        if ldr_value == "HIGH":
+        if ldr_value == "LOW":
             client.publish(MQTT_TOPIC, "Light ON")
             print("Light ON")
         # If it's bright, send "Light OFF" message
