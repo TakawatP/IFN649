@@ -4,7 +4,7 @@ import string
 import paho.mqtt.client as mqtt
 
 # MQTT settings
-MQTT_BROKER = "3.107.83.64"
+MQTT_BROKER = "13.55.201.188"
 MQTT_TOPIC = "home/lighting"
 LOG_FILE = "mqtt_log.txt"  # Log file for MQTT messages
 
